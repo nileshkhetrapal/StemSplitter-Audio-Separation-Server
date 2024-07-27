@@ -22,8 +22,7 @@ RUN pip install --upgrade pip \
 
 # Copying the application code into the container
 COPY audio_api.py audio_processing.py ./
-COPY cert.pem .
-COPY key.pem .
+
 
 # Setting the Flask app environment variable
 ENV FLASK_APP=audio_api.py
